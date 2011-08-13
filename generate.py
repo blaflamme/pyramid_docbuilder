@@ -65,7 +65,7 @@ def build_doc(args, path, output, venv):
     print 'preparing repo'
     os.chdir(path)
     if os.path.exists('.git'):
-        print 'print git detected'
+        print 'git detected'
         subprocess.call(['git', 'checkout', 'master'])
         subprocess.call(['git', 'pull'])
         subprocess.call(['git', 'checkout', args.tag])
